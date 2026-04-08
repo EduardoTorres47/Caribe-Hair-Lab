@@ -1,0 +1,91 @@
+header, nav, main, footer {display: block;}
+#wrapper {margin: auto; width: 80%;
+          background-color: #125117;
+          display: flex;
+          flex-direction: column;}
+#row{display: flex;
+     flex-direction: row;}
+#row > nav {padding-right: 20px;
+            margin-right: 1%;
+            width: 150px;
+            font-weight: bold;}
+#row > main {width: 90%;
+      margin-left: 1%;}
+#imagen {float: right;
+         margin-right: 80px;
+         margin-bottom: 40px;}
+.alignment {text-align: left;}
+
+.gallery li {display: inline-block;
+            padding: 8px;
+            margin: 20px;
+            text-align: center;
+            }
+.img a > img {margin-bottom: 10px;}
+.card {border:2px solid #093c0d;
+       margin-bottom: 4px;
+       padding-left: 4px;}
+.shadow{text-shadow: 2px 1px 3px #0f6917;}
+div a {text-decoration: none;}
+main {background-color: #e1d7b5; 
+      padding: 4px 8px 4px;}
+body {background-color: #c1a05a;
+      font-family: Arial, Helvetica, sans-serif;}
+header {background-image: url(images/playa.png);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;      
+        padding: 20px;}
+h1 {color: #ffffff;
+     text-align: center;
+     text-shadow:2px 2px 5px #054a0b}
+h2 {text-align: center;}
+h3 {text-align: center;
+    text-shadow: 2px 2px 5px #093c0d;}
+li { padding-bottom: 2px;}
+nav li {padding-bottom: 10px;}
+nav a:link {color: #c1a05a;}
+nav a:visited {color:#c1a05a;}
+nav a:hover {font-size: 15px;
+            border-width: 3px;
+            border-style: none none none solid;
+            border-color: #1c1c1c;
+            padding: 5px 4px;} 
+nav a:active {color: #8eda54;}
+main a:link {color: #b59247;} 
+main a:visited {color: #b59247;} 
+main a:hover {color: #0d5441;}
+main a:active {color:#e3dcc5}     
+img {width: 250px; height: 250px;
+     display: block;}
+ul {list-style-type: none;}
+footer {text-align: center; line-height: 180%; background-color: #093c0d; color: #c1a05a}
+footer a {color: #c1a05a;}
+
+@media only screen and (max-width: 1024px) {
+     body {margin: 0;}
+     #wrapper {width:auto}
+     #row {display: flex;
+           flex-direction: column;}
+     #row > main {width: auto;
+                  margin-right: 1%;}
+     #row > nav {float: none; width: auto;}
+     nav li {display: inline-block; padding: 5px;}
+     nav ul {text-align: center;}
+     nav a {border-style: none;}
+     h1, h2 {font-size: 200%;}
+     p {font-size: 90%;}
+     footer {background-color: #125117;}
+}
+@media only screen and (max-width: 768px){
+     h1, h2 {font-size: 100%;} 
+     p {font-size: 90%;}  
+     nav, nav ul, nav li {padding: 0;} 
+     nav {width: 100%;}
+     nav li {display: block; }  
+     nav a {display: block; 
+             padding: 8px 2px;
+             border-bottom: 2px outset #000000; } 
+     a:hover {border-left: none; 
+              border-style: none;} 
+}
